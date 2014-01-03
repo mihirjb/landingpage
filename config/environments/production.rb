@@ -77,6 +77,12 @@ Landingpage::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  config.serve_static_assets = false
+  # Don't fallback to assets pipeline if a precompiled asset is missed
+  config.assets.compile = false
+  # Generate digests for assets URLs
+  config.assets.digest = true
   config.assets.initialize_on_precompile = false
   
 end
