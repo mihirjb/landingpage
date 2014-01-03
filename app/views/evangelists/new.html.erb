@@ -1,7 +1,13 @@
+	<h1 class="hero">Selling mobile phones online made easy. Also <strong>Free!</strong></h1>
+	<p class="hero">No listing fees. No transaction fees. No hidden costs.<br/><strong>It's free.</strong></p>
+
+
 <section class="hero">
 	<div class="wrap">
 		<div class="panel panel-default">
-  			<div class="panel-body"><%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
+  			<div class="panel-body">
+	
+<%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
 <div class="form-group">
 <div class="input-group input-group-lg">
 	<%= f.text_field :email, :class=> "form-control", :placeholder=>"Email address" %>
