@@ -12,7 +12,7 @@ class EvangelistsController < ApplicationController
        if @evangelist.save 
          redirect_to root_path, :notice => "Signed up successfully"
        else
-         redirect_to  new_evangelist_path, :notice => "Signed up successfully"
+         redirect_to  "evangelists/index", :notice => "Signed up successfully"
        end
 
      end
