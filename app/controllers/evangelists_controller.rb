@@ -1,4 +1,7 @@
 class EvangelistsController < ApplicationController
+  
+  before_filter :authenticate_admin!, :only => [:index]
+  
   def index
     @ev = Evangelist.all
   end
