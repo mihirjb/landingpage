@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: evangelists
+#
+#  id         :integer          not null, primary key
+#  email      :string(255)
+#  fullname   :string(255)
+#  phone      :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  fullname: MyString
+  phone: MyString
+
+two:
+  email: MyString
+  fullname: MyString
+  phone: MyString

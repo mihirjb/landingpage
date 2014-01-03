@@ -1,0 +1,8 @@
+<section class="hero">
+	<div class="wrap">
+		<h1>Evangelists#index</h1>
+<% @ev.each do |e| %>
+<%= e.fullname + " | " + e.email + " | " + e.phone %><br/>
+<% end %>
+</div>
+</section>
