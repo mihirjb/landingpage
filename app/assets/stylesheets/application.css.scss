@@ -4,7 +4,8 @@ body
 {
 font-family: 'Roboto', sans-serif;
 font-weight:100px;
-
+margin:0;
+padding:0;
 }
 .container
 {
@@ -156,4 +157,9 @@ span.emphasis
 {
 color:#000;
 font-weight:bold;
+}
+
+p.center-block
+{
+text-align:center;
 }
