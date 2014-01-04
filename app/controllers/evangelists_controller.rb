@@ -13,13 +13,17 @@ class EvangelistsController < ApplicationController
   def create
       @evangelist = Evangelist.create(evangelist_params)
        if @evangelist.save 
-         redirect_to root_path, :notice => "Signed up successfully"
+         redirect_to "/evangelists/thanks", :notice => "Signed up successfully"
        else
-         redirect_to  "/evangelists/index", :notice => "Signed up successfully"
+         redirect_to  "/evangelists/new", :notice => "Sign up failed"
        end
 
      end
      
+
+def thanks
+  @saythanks = "Thank you for reaching out to us. We will get back to you as soon as possible"
+end
 
 
      private 

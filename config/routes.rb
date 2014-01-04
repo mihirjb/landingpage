@@ -1,6 +1,8 @@
 Landingpage::Application.routes.draw do
  
   devise_for :admins
+  get 'evangelists/thanks' => 'evangelists#thanks'
+  
  resources :evangelists
  root :to => 'evangelists#new'
   # The priority is based upon order of creation: first created -> highest priority.
