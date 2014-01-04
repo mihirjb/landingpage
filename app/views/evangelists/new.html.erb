@@ -1,25 +1,41 @@
-	<h1 class="hero">Selling mobile phones online made easy. Also <strong>Free!</strong></h1>
-	<p class="hero">No listing fees. No transaction fees. No hidden costs.<br/><strong>It's free.</strong></p>
 
 
 <section class="hero">
+	<h1 class="hero">Selling mobile phones online made easy. Also <span class="emphasis">Free!</span></h1>
+	<p class="hero">No listing fees. No transaction fees. No hidden costs.</p>
+	
 	<div class="wrap">
 		<div class="panel panel-default">
   			<div class="panel-body">
 	
 <%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
 <div class="form-group">
-<div class="input-group input-group-lg">
+	<h3 class="center-block">I want to</h3>
+	<%= f.select :action , [['Sell','Sell'],['Buy','Buy']],  :autofocus => true%>
+	<%= f.select :model , [['iOS phone','iOS'],['Android phone','droid'], ['Windows phone','windows']],  :autofocus => true%>
+	</div>
+	<h3 class="center-block">at</h3>
+	
+	<div class="form-group">
+	<div class="input-group input-group-lg">
+	<%= f.text_field :value, :class=> "form-control", :placeholder=>"price of the phone" %>
+	<span class="input-group-addon">SGD</span><br/>
+	</div>
+	</div>
+	<h3 class="center-block">Please get in touch using</h3>
+	<div class="form-group">
+	<div class="input-group input-group-lg">
+	<%= f.text_field :fullname, :class=> "form-control", :placeholder=>"Full Name" %>
+	
 	<%= f.text_field :email, :class=> "form-control", :placeholder=>"Email address" %>
 
-	<%= f.text_field :fullname, :class=> "form-control", :placeholder=>"Full Name" %>
 
 	<%= f.text_field :phone, :class=> "form-control", :placeholder=>"Phone Number" %>
 </div>  
 </div>
 
 <div class="form-group">
-<%= f.submit "Go", :disable_with => 'Going...', :class =>"btn btn-primary btn-lg btn-block" %>
+<%= f.submit "Go", :disable_with => 'Going...', :class =>"btn btn-success btn-lg btn-block" %>
 <% end %>
 </div>
 </div>
