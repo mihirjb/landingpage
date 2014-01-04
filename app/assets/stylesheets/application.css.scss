@@ -94,7 +94,6 @@ background-image: -o-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25
 background-image: radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
 opacity:0.90;
 border:none;
-
 }
 div.container form .form-body
 {
@@ -124,6 +123,11 @@ text-align:center;
 margin:20px 0px;
 color:#fff;
 
+}
+p span.different
+{
+font-size:18px;
+color:#ef3495;
 }
 
 

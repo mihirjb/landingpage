@@ -24,6 +24,6 @@ class EvangelistsController < ApplicationController
 
      private 
     def evangelist_params
-     params.require(:evangelist).permit(:email, :fullname, :phone)
+     params.require(:evangelist).permit(:email, :fullname, :phone, :action, :model, :value)
     end
 end
