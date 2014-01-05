@@ -1,8 +1,18 @@
-<section class="hero">
+<section>
 	<div class="wrap">
 		<h1>Evangelists#index</h1>
+		<table class="table table-bordered">
+			<th>Name</th><th>Email</th><th>Phone</th><th>Wants to</th><th>Phone</th><th>Price</th>
 <% @ev.each do |e| %>
-<%= e.fullname + " | " + e.email + " | " + e.phone %><br/>
+<tr>
+<td><%= e.fullname %></td> 
+<td><%= e.email %></td> 
+<td><%= e.phone %></td> 
+<td><%= e.action %></td> 
+<td><%= e.model %></td> 
+<td><%= e.value %></td> 
+</tr>
 <% end %>
+</table>
 </div>
 </section>
