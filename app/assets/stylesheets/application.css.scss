@@ -172,7 +172,11 @@ text-align:center;
  }
 }
 @media (max-width: 500px) {
-  div.container .panel  { width: 80%; 
+div.wrap
+{
+padding: 0px 5px;
+}
+  div.container .panel  { width: 280px; 
 	margin: 0 auto;
 
 }
