@@ -26,3 +26,101 @@
 </div>
 </div>
 </section>
+
+<section id="whyus">
+	<div class="wrap">
+		<div class="mini-section">
+			<h2 class="round">1</h2>
+			<h3>Better Than eBay</h3>
+			<p>
+			No seller fees! And you get paid faster.<br/>
+			No junk devices allowed.<br/>
+			We use PayPal, so you are protected.
+			</p>
+			</div>
+			<div class="mini-section">
+				<h2 class="round">2</h2>
+			<h3>
+			No Seller Fees</h3>
+			<p>
+			It's free to list and free to sell. Swappa does not charge seller fees.<br/>
+			</p></div>
+			<div class="mini-section">
+				<h2 class="round">3</h2>
+				
+				<h3>Great Support, Helpful Staff</h3>
+			<p>Our support staff are helpful, active, and knowledgeable mobile experts.<br/>
+			We appreciate your business, and it shows.<br/>
+			No Junk Devices<br/>
+			No cracked screens, no water damage.<br/>
+			Devices must be ready for activation.<br/>
+			We review and approve every listing.<br/></p></div>
+			<div class="mini-section">
+				<h2 class="round">4</h2>
+			<h3>Buy with Confidence</h3>
+			
+			<p>No junk devices allowed.<br/>
+			All listings are reviewed and approved by Phonestobuy team.<br/>
+			PayPal protections for buyers and sellers.<br/></p>
+			</div>
+		
+		</div>
+	</section>
+	
+	<section id="buy">
+		<div class="wrap">
+			<h2 class="center-block">Buy your desired phone in a matter of few clicks.</h2>
+				<div class="mini-section">
+				<h3>Login/Signup</h3>
+				</div>
+				<div class="mini-section">
+				<h3>Find the device you want to buy.</h3>
+				</div>
+				<div class="mini-section">
+				<h3>Browse listings.</h3>
+				</div>
+				<div class="mini-section">
+				<h3>Pay through paypal</h3>
+				</div>
+		</div>
+		</section>
+		
+		<section id="sell">
+			<div class="wrap">
+				<h2>Sell your phone very easily and get paid fast.</h2>
+				
+					<div class="mini-section">
+					<h3>Login/Signup</h3>
+					</div>
+					<div class="mini-section">
+					<h3>Find the device you want to sell.</h3>
+					</div>
+					<div class="mini-section">
+					<h3>Create listing.<br/> Upload Photos.<br/> Get Verified.</h3>
+					</div>
+					<div class="mini-section">
+					<h3>Get Sold.<br/> Receive payment.<br/> Ship it</h3>
+					</div>
+			</div>
+			</section>
+			
+			<div class="wrap">
+				<div class="panel panel-default">
+		  			<div class="panel-body">
+
+		<%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
+			<h3 class="center-block">I am interested tell me more.</h3>
+			<div class="form-group">
+			<div class="input-group-lg">
+
+			<%= f.text_field :email, :class=> "form-control", :placeholder=>"Email address" %>
+
+		</div>  
+		</div>
+
+		<div class="form-group">
+		<%= f.submit "Go", :disable_with => 'Going...', :class =>"btn btn-success btn-lg btn-block" %>
+		<% end %>
+		</div>
+		</div>
+		</div>

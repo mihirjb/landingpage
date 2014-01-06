@@ -17,7 +17,7 @@ width:100%;
 
 section
 {
-min-height:465px;
+min-height:600px;
 padding:0;
 margin:0;
 }
@@ -34,7 +34,11 @@ background: url('../mainbg3.jpg') no-repeat;
 background-size: 100% 100%;
 min-height:760px;
 }
-
+section#buy, section#sell
+{
+padding:60px 0px;
+background-color:#efefef;
+}
 div.wrap
 {
 width:80%;
@@ -86,7 +90,7 @@ div.container .panel
 {
 width:350px;
 background-color:#000;
-margin:0px auto 60px;
+margin:60px auto 60px;
 -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
@@ -146,7 +150,6 @@ header
 {
 margin-top:0;
 background-color:#fff;
-height:100px;
 width:100%;
 }
 header h1.main-heading
@@ -167,6 +170,87 @@ p.center-block
 {
 text-align:center;
 }
+
+section div.mini-section
+{
+width:500px;
+margin:60px auto;
+}
+div.mini-section h2.round
+{
+text-align:center;
+height:60px;
+width:60px;
+border-radius:40px;
+padding:14px;
+margin:0 auto;
+background-color:#efefef;
+-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+-o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+div.mini-section h3
+{
+text-align:center;
+color:#5cb85c;
+}
+div.mini-section p
+{
+padding:10px;
+padding-bottom:20px;
+border-bottom: 1px solid #000;
+line-height:1.5em;
+}
+
+section#buy div.mini-section,section#sell div.mini-section
+{
+width:250px;
+margin-left: 3px;
+margin-right: 3px;
+float:left;
+border-radius:200px;
+background-color:#fff;
+height:250px;
+padding:90px 0;
+opacity:.8;
+-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+-o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+section#sell h2
+{
+text-align:right;
+}
+.navbar
+{
+border:none;
+}
+.navbar ul
+{
+float:right;
+}
+
+nav.navbar ul.nav li a
+{
+color:#ef3495;
+}
+
+
+footer p
+{
+margin-top:30px;
+}
+
+
+
+
+
+
 
 @media (max-width: 1000px) {
   div.container .panel  { width: 350px;
