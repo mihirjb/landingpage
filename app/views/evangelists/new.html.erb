@@ -103,24 +103,4 @@
 					</div>
 			</div>
 			</section>
-			
-			<div class="wrap">
-				<div class="panel panel-default">
-		  			<div class="panel-body">
-
-		<%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
-			<h3 class="center-block">I am interested tell me more.</h3>
-			<div class="form-group">
-			<div class="input-group-lg">
-
-			<%= f.text_field :email, :class=> "form-control", :placeholder=>"Email address" %>
-
-		</div>  
-		</div>
-
-		<div class="form-group">
-		<%= f.submit "Go", :disable_with => 'Going...', :class =>"btn btn-success btn-lg btn-block" %>
-		<% end %>
-		</div>
-		</div>
-		</div>
+	

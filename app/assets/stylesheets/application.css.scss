@@ -38,6 +38,7 @@ section#buy, section#sell
 {
 padding:60px 0px;
 background-color:#efefef;
+overflow:auto;
 }
 div.wrap
 {
@@ -90,7 +91,7 @@ div.container .panel
 {
 width:350px;
 background-color:#000;
-margin:60px auto 60px;
+margin:0px auto 60px;
 -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
@@ -246,8 +247,11 @@ footer p
 margin-top:30px;
 }
 
+footer .container .panel
+{
+margin:20px auto 0px;
 
-
+}
 
 
 
@@ -259,6 +263,10 @@ margin-top:30px;
  }
 }
 @media (max-width: 500px) {
+section#whyus div.mini-section
+{
+width:300px;
+}
 div.wrap
 {
 padding: 0px;
