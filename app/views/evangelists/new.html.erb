@@ -1,36 +1,21 @@
 
 
 <section class="hero">
-	<h1 class="hero">Buy awesome phones from verified sellers at less.<span class="emphasis"></span></h1>
-	<p class="hero"><span class="emphasis">No listing fees. No Commissions charged. Selling is free.</span><br/><span class="different">which means phones cost a lot less for you buyers.</span></p>
+	<h1 class="hero">Buy and Sell mobile phones and Tablets.<span class="emphasis"></span></h1>
+	<p class="hero"><span class="emphasis">We're low-cost, secure, and easy to use.</span><br/><span class="different"> Every listing is verified for ownership and gentle usage (no cracks or water damage).</span></p>
 	
 	<div class="wrap">
 		<div class="panel panel-default">
   			<div class="panel-body">
 	
 <%= form_for @evangelist, :class=>"form-horizontal",  :role => "form" do |f| %>
-<div class="form-group">
-	<h3 class="center-block">I want to</h3>
-	<%= f.select :action , [['Sell','Sell'],['Buy','Buy']],  :autofocus => true%>
-	<%= f.select :model , [['iOS phone','iOS'],['Android phone','droid'], ['Windows phone','windows']],  :autofocus => true%>
-	</div>
-	<h3 class="center-block">at</h3>
-	
-	<div class="form-group">
-	<div class="input-group input-group-lg">
-	<%= f.text_field :value, :class=> "form-control", :placeholder=>"price of the phone" %>
-	<span class="input-group-addon">SGD</span><br/>
-	</div>
-	</div>
-	<h3 class="center-block">Please get in touch using</h3>
+	<h3 class="center-block">I want to be a part of this.</h3>
 	<div class="form-group">
 	<div class="input-group input-group-lg">
 	<%= f.text_field :fullname, :class=> "form-control", :placeholder=>"Full Name" %>
 	
 	<%= f.text_field :email, :class=> "form-control", :placeholder=>"Email address" %>
 
-
-	<%= f.text_field :phone, :class=> "form-control", :placeholder=>"Phone Number" %>
 </div>  
 </div>
 
