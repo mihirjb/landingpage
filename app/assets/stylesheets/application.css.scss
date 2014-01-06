@@ -37,9 +37,11 @@ min-height:760px;
 section#buy, section#sell
 {
 padding:60px 0px;
-background-color:#efefef;
+background:url('../graybg.png');
 overflow:auto;
 }
+
+
 div.wrap
 {
 width:80%;
@@ -180,7 +182,6 @@ margin:60px auto;
 div.mini-section h2.round
 {
 text-align:center;
-height:60px;
 width:60px;
 border-radius:40px;
 padding:14px;
@@ -204,28 +205,40 @@ border-bottom: 1px solid #000;
 line-height:1.5em;
 }
 
-section#buy div.mini-section,section#sell div.mini-section
+div.left-column
 {
-width:250px;
-margin-left: 3px;
-margin-right: 3px;
+width:48%;
 float:left;
-border-radius:200px;
+}
+div.right-column
+{
+width:45%;
+float:right;
+}
+ul.hero li
+{
+list-style:none;
+word-spacing:0.1em;
+text-align:center;
+font-size:20px;
+color:#555;
+line-height:30px;
 background-color:#fff;
-height:250px;
-padding:90px 0;
-opacity:.8;
+opacity:0.90;
+padding:15px;
+border-bottom: 1px dotted #ccc;
+border-radius:5px;
+width:300px;
 -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
 }
 
-
-
-section#sell h2
+div#buy div.wrap h2
 {
-text-align:right;
+text-shadow:2px 2px -5px #ccc;  
 }
 .navbar
 {
@@ -241,6 +254,11 @@ nav.navbar ul.nav li a
 color:#ef3495;
 }
 
+section#buy span.pop
+{
+
+color:#ef3495;
+}
 
 footer p
 {
